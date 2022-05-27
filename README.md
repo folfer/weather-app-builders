@@ -1,6 +1,6 @@
 
 <p align="center">
-  See your weather. Project developed during challenger |>
+  See your weather. Project developed during challenger for builders 💖 |>
 </p>
 
 <div align="center">
