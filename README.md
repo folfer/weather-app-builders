@@ -50,7 +50,7 @@ $ expo start
 
 # :bug: Issues
 
-Create a <a href="https://github.com/LeonneBrito/weather-app-builders/issues">new issue report</a>, it will be an honor to be able to help you solve and further improve our application.
+Create a <a href="https://github.com/folfer/weather-app-builders/issues">new issue report</a>, it will be an honor to be able to help you solve and further improve our application.
 
 # :sparkles: Contributing
 
