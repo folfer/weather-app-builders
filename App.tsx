@@ -10,9 +10,12 @@ import {
   Poppins_500Medium,
   Poppins_700Bold,
 } from "@expo-google-fonts/poppins";
-import { Home } from "./src/screens/Home";
+import { ActivityIndicator } from "react-native";
+import { LocationProvider, useLocation } from "./src/hooks/useLocation";
+import Screen from "./src/screens/Screen";
 
 export default function App() {
+  const { nextPage } = useLocation();
   const [fontsLoaded] = useFonts({
     Poppins_400Regular,
     Poppins_500Medium,
@@ -20,11 +23,14 @@ export default function App() {
   });
 
   if (!fontsLoaded) {
-    return <AppLoading />;
+    return <ActivityIndicator />;
   }
   return (
     <ThemeProvider theme={theme}>
-      <Home />
+      <StatusBar />
+      <LocationProvider>
+        <Screen />
+      </LocationProvider>
     </ThemeProvider>
   );
 }
